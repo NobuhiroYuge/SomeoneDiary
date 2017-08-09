@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+.profile-image {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-name {
+  text-align: center;
+}
