@@ -1,2 +1,5 @@
 class ArticlesController < ApplicationController
-end
+  def index
+  end
+
+end  # end 'ArticlesController' class
