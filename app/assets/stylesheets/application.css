@@ -21,6 +21,16 @@
   margin: 0 auto;
 }
 
+.wall-image {
+  height: 100vh;
+  background-image: url(organic-tiles.png);
+}
+
 .profile-name {
   text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
