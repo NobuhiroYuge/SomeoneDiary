@@ -1,25 +1,8 @@
 <h1>新規投稿</h1>
+
 <%= form_for(@article) do |f| %>
-  タイトル
-  <%= f.text_field :title %>
-  本文
-  <%= f.text_field :body %>
-  著者
-  <%= f.text_field :author %>
+  <div>タイトル: <%= f.text_field :title %></div>
+  <div>本文: <%= f.text_field :body %></div>
+  <div>著者: <%= f.text_field :author %></div>
   <%= f.submit '投稿する' %>
 <% end %>
-
-<!--
-  <h1>新規投稿</h1>
-  <%= form_for(@article) do |f| %>
-    タイトル
-    <input type="text" name="title">
-
-    本文
-    <textarea name="body"></textarea>
-
-    著者
-    <input type="text" name="author">
-    <input type="submit" value="投稿する">  
-  <% end %>
--->
