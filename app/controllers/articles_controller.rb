@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
     # Article.create is also vaild
     @article = Article.new(article_params)
     @article.save
-    redirect_to '/articles'
+    redirect_to articles_path
     # redirect_to @article
   end
 
@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    redirect_to '/articles'
+    redirect_to articles_path
   end
 
   private

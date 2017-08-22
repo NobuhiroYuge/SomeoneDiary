@@ -5,6 +5,8 @@
   <h2>本文</h2>
   <p><%= @article.body %></p>
 
-  <%= link_to "編集", article_path(@article.id) + '/edit', class: "btn edit-btn" %>
-  <%= link_to "削除", article_path(@article.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか" %> 
+  
+  <%= link_to "一覧", articles_path, class: "btn index-btn" %>
+  <%= link_to "編集", edit_article_path(@article.id), class: "btn edit-btn" %>
+  <%= link_to "削除", article_path(@article.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか" %>
 </div>
