@@ -1,12 +1,16 @@
 <div class="wall-image">
-  <h2>タイトル</h2>
+  <h1>投稿詳細</h1>
+
+  <h3>タイトル</h3>
   <p><%= @article.title %></p>
 
-  <h2>本文</h2>
+  <h3>本文</h3>
   <p><%= @article.body %></p>
 
+  <h3>著者</h3>
+  <p><%= @article.author %></p>
   
-  <%= link_to "一覧", articles_path, class: "btn index-btn" %>
+  <%= link_to "投稿一覧", articles_path, class: "btn index-btn" %>
   <%= link_to "編集", edit_article_path(@article.id), class: "btn edit-btn" %>
   <%= link_to "削除", article_path(@article.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか" %>
 </div>
