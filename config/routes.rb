@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  devise_for :users
+  root 'posts#index' 
+
   # class HomeController
-  root 'home#top'
+  # root 'home#top'  # This is the assignment in the 1st class.
 
   # class ArticlesController
   #     articles GET    /articles(.:format)          articles#index
