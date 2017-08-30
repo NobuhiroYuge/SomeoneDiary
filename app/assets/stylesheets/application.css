@@ -34,6 +34,10 @@
   padding: 0.5em;
 }
 
+.base-background {
+  background-color: #1f77b4
+}
+
 table {
   border-collapse: collapse;
 }
